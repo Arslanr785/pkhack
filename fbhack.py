@@ -14,22 +14,6 @@ import sys
 import random
 import warnings
 import time
-try:
-	import mechanize
-except ImportError:
-	print "[*] Please install mechanize python module first"
-	sys.exit(1)
-except KeyboardInterrupt:
-	print "\n[*] Exiting program...\n"
-	sys.exit(1)
-try:
-	import cookielib
-except ImportError:
-	print "[*] Please install cookielib python module first"
-	sys.exit(1)
-except KeyboardInterrupt:
-	print "\n[*] Exiting program...\n"
-	sys.exit(1)
 
 warnings.filterwarnings(action="ignore", message=".*gzip transfer encoding is experimental!", category=UserWarning)
 
